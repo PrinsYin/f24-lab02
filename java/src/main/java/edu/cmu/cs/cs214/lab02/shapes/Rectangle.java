@@ -12,4 +12,14 @@ public class Rectangle implements Shape {
     public double getArea() {
         return height * width;
     }
+    public int getShape()
+    {
+        return 1;
+    }
+
+    public double[] getSize()
+    {
+        return new double[]{height,width};
+    }
+
 }

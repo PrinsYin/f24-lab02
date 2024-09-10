@@ -10,4 +10,14 @@ public class Circle implements Shape {
     public double getArea() {
         return Math.PI * radius * radius;
     }
+    public int getShape()
+    {
+        return 2;
+    }
+
+    public double[] getSize()
+    {
+        return new double[]{radius};
+    }
+
 }
