@@ -12,9 +12,9 @@ public class Rectangle implements Shape {
     public double getArea() {
         return height * width;
     }
-    public int getShape()
+    public ShapeType getShape()
     {
-        return 1;
+        return ShapeType.RECTANGLE;
     }
 
     public double[] getSize()

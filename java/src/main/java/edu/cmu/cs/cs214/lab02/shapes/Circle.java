@@ -10,9 +10,9 @@ public class Circle implements Shape {
     public double getArea() {
         return Math.PI * radius * radius;
     }
-    public int getShape()
+    public ShapeType getShape()
     {
-        return 2;
+        return ShapeType.CIRCLE;
     }
 
     public double[] getSize()

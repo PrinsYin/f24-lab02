@@ -3,9 +3,9 @@ package edu.cmu.cs.cs214.lab02.shapes;
 public class Square implements Shape {
     public double sideLen;
 
-    public int getShape()
+    public ShapeType getShape()
     {
-        return 0;
+        return ShapeType.SQUARE;
     }
 
     public double[] getSize()

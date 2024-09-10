@@ -10,10 +10,11 @@ public class Renderer {
     }
 
     void draw() {
+        ShapeType type=shape.getShape();
         double area = shape.getArea();
 
         // assume implementation
-
+        
         System.out.println("Shape printed\n" + "Its area is " + area);
     }
 }
