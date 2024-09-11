@@ -16,6 +16,6 @@ public class Renderer {
         // assume implementation
         
         System.out.println("Shape printed\n" + "Its area is " + area);
-        System.out.println(" Its type is " + type);
+        System.out.println("Its type is " + type);
     }
 }
