@@ -12,6 +12,6 @@ renderer.draw();
 
 const renderer2 = newRenderer(circle)
 renderer2.draw();
-
+// renderer2.radius
 const renderer3 = newRenderer(square)
 renderer3.draw();

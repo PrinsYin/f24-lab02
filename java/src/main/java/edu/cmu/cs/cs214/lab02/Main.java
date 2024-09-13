@@ -8,8 +8,10 @@ public class Main {
         Shape square = new Square(2);
         
         Renderer renderer = new Renderer(circle);
-        renderer = new Renderer(square);
-        renderer = new Renderer(rectangle);
+        Renderer renderer2 = new Renderer(square);
+        Renderer renderer3 = new Renderer(rectangle);
         renderer.draw();
+        renderer2.draw();
+        renderer3.draw();
     }
 }
