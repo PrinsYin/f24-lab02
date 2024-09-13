@@ -1,10 +1,22 @@
-function square(sideLen: number): Shape {
+import { Shape,ShapeType } from "./shape.js";
+
+function Square(sideLen: number): Shape {
+
     return {
-        sideLen,
-        computeArea: function (): number {
-            return sideLen * sideLen
-        }
-    }
+        
+        computeArea(): number {
+            return sideLen*sideLen
+        },
+        getShape(): ShapeType {
+            return 'circle'
+          },
+        getSize(): number[] {
+            return [sideLen]
+          },
+        };
 }
 
-export { square }
+
+
+export { Square }
+

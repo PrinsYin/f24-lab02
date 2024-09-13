@@ -1,10 +1,20 @@
-function circle(radius: number): Shape {
+import { Shape,ShapeType } from "./shape.js";
+
+
+function Circle(radius: number): Shape {
+
     return {
-        radius,
-        computeArea: function (): number {
+        
+        computeArea():  number {
             return Math.PI * radius * radius
-        }
-    }
+        },
+        getShape(): ShapeType {
+            return 'circle';
+          },
+        getSize(): number[] {
+            return [radius];
+          },
+        };
 }
 
-export { circle }
+export { Circle}

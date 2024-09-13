@@ -1,18 +1,19 @@
-interface Rectangle {
-    width: number,
-    height: number,
-    computeArea: () => number
-}
+import { Shape,ShapeType } from "./shape.js";
 
-function newRectangle(width: number, height: number): Rectangle {
+function Rectangle(width: number, height: number): Shape {
+
     return {
-        width,
-        height,
-
-        computeArea: function (): number {
+        
+        computeArea(): number {
             return width * height
-        }
-    }
+        },
+        getShape(): ShapeType {
+            return 'circle'
+          },
+        getSize(): number[] {
+            return [width,height]
+          },
+        };
 }
 
-export { Rectangle, newRectangle }
+export { Rectangle }
